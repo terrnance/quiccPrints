@@ -1,5 +1,4 @@
 # quiccPrints
-## (in the works)
 
 Takes images of thumbs from an iphone (app currently being developed) and converts them into fingerprint images.  See example below!
 
