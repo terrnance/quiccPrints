@@ -1,6 +1,6 @@
 # quiccPrints
 
-Takes images of thumbs from an iphone (app currently being developed) and converts them into fingerprint images.  See example below!
+Takes images of thumbs from an iphone via our ios app and converts them into fingerprint images.  See example below!
 
 Original Photo                                                                        |  Extracted Print
 :------------------------------------------------------------------------------------:|:-------------------------:
