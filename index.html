@@ -74,7 +74,7 @@ algorithm to determine several key statistics of each fingerprint.
   Terrance:
 </h3>
 <p>
-&nbsp;&nbsp;&nbsp;&nbsp; My task was to implement feature extraction. In order words, finding a way to describe the contents of the thumbprints that Elijah gave to me. Therefore, I read through different scholarly articles that discussed the best ways to implement feature extraction. I primarily consulted this source for my research: <a href="https://pdfs.semanticscholar.org/49ad/2473ecc1dcbfdfc9a981f5191a1224107ef1.pdf"> https://pdfs.semanticscholar.org/49ad/2473ecc1dcbfdfc9a981f5191a1224107ef1.pdf </a>
+&nbsp;&nbsp;&nbsp;&nbsp; My task was to implement feature extraction. In order words, finding a way to describe the contents of the thumbprints that Elijah gave to me. Therefore, I read through different scholarly articles that discussed the best ways to implement feature extraction. I primarily consulted this source for my research: <a href="https://pdfs.semanticscholar.org/49ad/2473ecc1dcbfdfc9a981f5191a1224107ef1.pdf"> [4]</a>
 </p>
 <p>
 &nbsp;&nbsp;&nbsp;&nbsp;  For figures, <a href="terrance_figures.pdf"> click here <a/>.  As I mentioned earlier, to complete this task, I first decided to conduct some research of my own to find the best approach to take for feature extraction. I read through different scholarly articles that discussed the best ways to implement feature extraction. Once I found a couple of different approaches, I began testing and implementing the different approaches using jupyter notebook. I quickly realized that the Crossing Number Concept was the best algorithm to use. One reason I liked this algorithm is because the function was pretty straightforward to implement. It uses a 3x3 sliding window to scan the local neighborhood (Figure 3). It performs this operation on the outside pixels and returns the value (Figure 4). I can use this chart (Figure 5) to determine what type of point (Figure 6) the center pixel represents. For my actual feature extraction function, I decided to explicitly have variables to represent each position in the 3x3 sliding window because it made the function a lot easier to understand. It also made the operation performed on the outside neighbors clearer and easier to understand because originally, I ran into a lot of problems trying to condense the size of the overall feature extraction method. I successfully implemented this Crossing Number Concept algorithm so that we can now use this algorithm to output a new grayscale image, where the brighter pixels have higher CN values and darker pixels have lower CN values. As a result, we now know the locations of the different types of points. The algorithm I implemented also outputs the total counts of each type of point that are in the given image. I also added a portion to this algorithm that outputs a color image instead of grayscale image where each different type of point represents a different color, so we can better see the results from the algorithm. Since we modified the app so that we only have the top portion/actual thumbprint (Figure 2), I decided that we did not need to add a post-processing element to the algorithm. I stand firm with this decision because now we are only performing operations on the actual thumbprint, instead of the other entire thumb with the extra noisy features (Figure 1). So now our results do not get interfered and we consistently get the same final total counts of each type of point. The only libraries for this process that are used are skimage and matplotlib.
@@ -339,6 +339,23 @@ in the end we ended up creating software that I am proud of.
 <strong> Week 11 – 11/18 </strong>
 <li> THANKSGIVING BREAK (so I did not work on the project).  </li>
 </ul>
+	
+<ul>
+<strong> Week 12 - 11/25 </strong>
+<li> I helped Anthony and Elijah send the image to our server.  </li>
+</ul>
+
+<ul>
+<strong> Week 13 - 12/2 </strong>
+<li> I worked with Anthony and Elijah to finish last minute touches in order to get ready for the presentation.  </li>
+<li> We presented our semester long results to the class.  </li>
+</ul>
+	
+<ul>
+<strong> Week 14 - 12/9 </strong>
+<li> I worked with Anthony and Elijah to clean up the draft report.  </li>
+<li> We submited our final code and report.  </li>
+</ul>
 
 <h3>
   Anthony:
@@ -504,30 +521,30 @@ extraction algorithm, we faced significant setbacks.
 <p>Lastly, given more time we would love to figure out how to get the iOS application to do all of the work that we have spread across the phone and the serever. Ideally this would be an application that would do all of the image processing instantly (or as quickly as possible).</p>
 
 <h2>
-  References:
+ References:
 </h2>
-<a href="https://scikit-image.org/"> Scikit-Image </a>
+<a href="https://scikit-image.org/"> [1] Scikit-Image </a>
 <br>
 <br>
-<a href="https://opencv.org/"> OpenCV </a>
+<a href="https://opencv.org/"> [2] OpenCV </a>
 <br>
 <br>
-<a href="https://matplotlib.org/"> Matplotlib </a>
+<a href="https://matplotlib.org/"> [3] Matplotlib </a>
 <br>
 <br>
-<a href="https://pdfs.semanticscholar.org/49ad/2473ecc1dcbfdfc9a981f5191a1224107ef1.pdf"> https://pdfs.semanticscholar.org/49ad/2473ecc1dcbfdfc9a981f5191a1224107ef1.pdf </a>
+<a href="https://pdfs.semanticscholar.org/49ad/2473ecc1dcbfdfc9a981f5191a1224107ef1.pdf"> [4] Implementation of Minutiae Based Fingerprint Identification System using Crossing Number Concept </a>
 <br>
 <br>
-<a href="https://docs.swift.org/swift-book/">Swift Programming Book</a>
+<a href="https://docs.swift.org/swift-book/"> [5] Swift Programming Book</a>
 <br>
 <br>
-<a href="https://developer.apple.com/documentation/avfoundation">AVFoundation</a>
+<a href="https://developer.apple.com/documentation/avfoundation"> [6] AVFoundation</a>
 <br>
 <br>
-<a href="https://www.raywenderlich.com/464-storyboards-tutorial-for-ios-part-1">XCode Story board Tutorial</a>
+<a href="https://www.raywenderlich.com/464-storyboards-tutorial-for-ios-part-1"> [7] XCode Story board Tutorial</a>
 <br>
 <br>
-<a href="https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html">Swift Classes and Strcutres</a>
+<a href="https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html"> [8] Swift Classes and Strcutres</a>
 <br>
 <br>
 <a href="https://codewithchris.com/xcode-tutorial/">XCode Tutorial</a>
